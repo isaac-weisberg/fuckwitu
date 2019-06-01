@@ -18,6 +18,8 @@ const views = presenters.map(presenter => {
     return view
 })
 
+const root = document.getElementById("woot") as HTMLDivElement
+
 views.forEach(view => {
-    document.appendChild(view.element)
+    root.appendChild(view.element)
 })

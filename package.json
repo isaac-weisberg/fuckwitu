@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc"
+    "start": "npx webpack && open ./dist/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^3.5.1"
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }
